@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+@import "abstract/variables";
+@import "abstract/breakpoint";
+@import "abstract/z-index";
+
+:root {
+  font-size: 62.5%;
+
+  @each $name, $color in $webfatorial-colors {
+    --color-#{$name}: #{$color};
+  }
+
+  @each $name, $color in $social-media-colors {
+    --color-#{$name}: #{$color};
+  }
+}
+
+html,
+body,
+input,
+textarea,
+button {
+  font-size: 16px;
+}
+
+body {
+  display: grid;
+  grid-template-columns:
+    calc(50vw - $max-width)
+    repeat(3, 1fr)
+    calc(50vw - $max-width);
+}
+
+@import "layout/l-header";

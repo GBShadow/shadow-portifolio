@@ -1,0 +1,8 @@
+$component-name: "l-header";
+
+.#{$component-name} {
+  text-align: center;
+  background-color: #eee;
+  margin: 0 auto;
+  width: $max-width;
+}
