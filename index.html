@@ -3,55 +3,148 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="sass/style.scss" />
     <title>Shadow Portfólio</title>
-    <script src="https://unpkg.com/feather-icons"></script>
+    <script
+      src="https://kit.fontawesome.com/ceda21751d.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header class="l-header">
-      <strong>GBShadow</strong>
-      <nav class="c-menu">
-        <a href="" class="c-menu__link">Home</a>
-        <a href="" class="c-menu__link">About</a>
-        <a href="" class="c-menu__link">Projects</a>
-        <a href="" class="c-menu__link">Contact</a>
-      </nav>
+      <div class="l-header__content">
+        <strong class="l-header__logo"
+          ><span class="u-color-yellow">GBS</span>hadow</strong
+        >
+        <nav class="c-menu">
+          <a href="" class="c-menu__link">Home</a>
+          <a href="" class="c-menu__link">About</a>
+          <a href="" class="c-menu__link">Projects</a>
+          <a href="" class="c-menu__link">Contact</a>
+        </nav>
+      </div>
     </header>
     <main class="l-main">
-      <section class="c-hero">
-        <div class="c-hero__info-container">
-          <h1 class="c-hero__title">I'm Gustavo</h1>
-          <p class="c-hero__subtitle">
-            Developer Web Full-stack Typescript & JavaScript
-          </p>
-          <div class="c-hero__social-media">
-            <a href="" class="c-hero__link">
-              <i data-feather="github"></i>
-            </a>
-            <a href="" class="c-hero__link">
-              <i data-feather="linkedin"></i>
-            </a>
+      <section class="l-hero">
+        <div class="l-hero__content">
+          <div class="l-hero__info-container">
+            <div class="u-underline"></div>
+            <h1 class="l-hero__title">I'm Gustavo</h1>
+            <p class="l-hero__subtitle">
+              Developer Web Full-stack Typescript & JavaScript
+            </p>
+            <div class="l-hero__social-media">
+              <a href="#" class="l-hero__link">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" class="l-hero__link">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+          <div class="l-hero__photo-container">
+            <img
+              class="l-hero__photo"
+              src="./img/me.jpg"
+              alt="Foto de Gustavo"
+            />
           </div>
         </div>
-        <div class="c-hero__photo-container">
-          <img class="c-hero__photo" src="./img/me.jpg" alt="Foto de Gustavo" />
+      </section>
+      <section class="l-about-me">
+        <div class="l-about-me__content">
+          <div class="l-about-me__photo-container">
+            <img
+              src="./img/me.jpg"
+              alt="Foto de Gustavo"
+              class="l-about-me__photo"
+            />
+          </div>
+          <div class="l-about-me__resume">
+            <h2 class="l-about-me__title">About</h2>
+            <div class="u-underline"></div>
+            <p class="l-about-me__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+              quae, eum maiores est enim earum fugiat aspernatur. Fuga qui iste
+              amet reiciendis possimus rerum omnis recusandae molestias error
+              consequuntur, doloribus inventore reprehenderit officiis. Dolore
+              aut, repellendus eius fugiat numquam cumque. Lorem ipsum dolor sit
+              amet consectetur adipisicing elit. Vero quae, eum maiores est enim
+              earum fugiat aspernatur. Fuga qui iste amet reiciendis possimus
+              rerum omnis recusandae molestias error consequuntur, doloribus
+              inventore reprehenderit officiis. Dolore aut, repellendus eius
+              fugiat numquam cumque.
+            </p>
+            <button type="button" class="l-about-me__button">About me</button>
+          </div>
         </div>
       </section>
-      <section class="c-about-me">
-        <div class="c-about-me__photo-container">
-          <img src="./img/me.jpg" alt="" class="c-about-me__photo">
+      <section class="l-services">
+        <div class="l-services__content">
+          <h2 class="l-services__title">Services</h2>
+          <div class="u-underline"></div>
+          <div class="l-services__cards">
+            <div class="l-services__card">
+              <i class="fas fa-code l-services__icon"></i>
+              <strong class="l-services__card__title">Web Development</strong>
+              <div class="u-underline"></div>
+              <p class="l-services__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates corrupti animi saepe quasi excepturi cupiditate
+                voluptate dolor sed obcaecati vero.
+              </p>
+            </div>
+            <div class="l-services__card">
+              <i class="fab fa-sketch l-services__icon"></i>
+              <strong class="l-services__card__title">Web Development</strong>
+              <div class="u-underline"></div>
+              <p class="l-services__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates corrupti animi saepe quasi excepturi cupiditate
+                voluptate dolor sed obcaecati vero.
+              </p>
+            </div>
+            <div class="l-services__card">
+              <i class="fab fa-android l-services__icon"></i>
+              <strong class="l-services__card__title">Web Development</strong>
+              <div class="u-underline"></div>
+              <p class="l-services__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates corrupti animi saepe quasi excepturi cupiditate
+                voluptate dolor sed obcaecati vero.
+              </p>
+            </div>
+          </div>
         </div>
-        <div></div>
+      </section>
+      <section class="l-last-works">
+        <h2 class="l-last-works__title">Latest Works</h2>
+        <p class="l-last-works__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+          repudiandae cupiditate ea facilis incidunt, non sapiente! Debitis
+          magnam, earum assumenda obcaecati cum quaerat facere ratione molestiae
+          dignissimos aliquid blanditiis architecto voluptates delectus
+          voluptate animi nulla! Autem explicabo perspiciatis officia ea.
+        </p>
+        <div class="l-last-works__projects">
+          <div class="l-last-works__project">
+            <div class="l-last-works__background"></div>
+            <strong class="l-last-works__project-name"></strong>
+          </div>
+          <div class="l-last-works__project">
+            <div class="l-last-works__background"></div>
+            <strong class="l-last-works__project-name"></strong>
+          </div>
+          <div class="l-last-works__project">
+            <div class="l-last-works__background"></div>
+            <strong class="l-last-works__project-name"></strong>
+          </div>
+          <div class="l-last-works__project">
+            <div class="l-last-works__background"></div>
+            <strong class="l-last-works__project-name"></strong>
+          </div>
+        </div>
       </section>
     </main>
-    <script>
-      feather.replace();
-    </script>
   </body>
 </html>

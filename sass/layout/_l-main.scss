@@ -1,0 +1,9 @@
+$component-name: "l-main";
+
+.#{$component-name} {
+  display: grid;
+  grid-template-columns:
+    calc(50vw - ($max-width / 2))
+    repeat(3, 1fr)
+    calc(50vw - ($max-width / 2));
+}

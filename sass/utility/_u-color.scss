@@ -1,0 +1,7 @@
+$component-name: "u-color";
+
+.#{$component-name} {
+  &-yellow {
+    color: var(--color-yellow-2);
+  }
+}

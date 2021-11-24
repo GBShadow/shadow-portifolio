@@ -1,8 +1,26 @@
 $component-name: "l-header";
 
 .#{$component-name} {
-  text-align: center;
-  background-color: #eee;
-  margin: 0 auto;
-  width: $max-width;
+  display: grid;
+  grid-template-columns:
+    calc(50vw - $max-width)
+    repeat(3, 1fr)
+    calc(50vw - $max-width);
+  background-color: var(--color-yellow-1);
+  padding: 3.2rem;
+
+  &__content {
+    grid-column: 2 / -2;
+    width: $max-width;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+  }
+
+  &__logo {
+    letter-spacing: 8px;
+    font-size: 3rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
 }

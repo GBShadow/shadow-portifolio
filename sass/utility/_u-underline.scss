@@ -1,0 +1,8 @@
+$component-name: "u-underline";
+
+.#{$component-name} {
+  width: 80px;
+  height: 4px;
+  background-color: var(--color-yellow-2);
+  margin-bottom: 1rem;
+}

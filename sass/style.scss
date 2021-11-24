@@ -1,6 +1,9 @@
 @charset "utf-8";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   outline: 0;
@@ -14,7 +17,7 @@
 :root {
   font-size: 62.5%;
 
-  @each $name, $color in $webfatorial-colors {
+  @each $name, $color in $colors {
     --color-#{$name}: #{$color};
   }
 
@@ -23,20 +26,36 @@
   }
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 4px;
+}
+
 html,
 body,
 input,
 textarea,
 button {
   font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: var(--color-text);
 }
 
-body {
-  display: grid;
-  grid-template-columns:
-    calc(50vw - $max-width)
-    repeat(3, 1fr)
-    calc(50vw - $max-width);
+button {
+  cursor: pointer;
 }
 
 @import "layout/l-header";
+@import "layout/l-main";
+@import "layout/l-hero";
+@import "layout/l-about-me";
+@import "layout/l-services";
+
+@import "component/c-menu";
+
+@import "utility/u-color";
+@import "utility/u-underline";

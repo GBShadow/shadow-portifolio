@@ -1,0 +1,23 @@
+$component-name: "c-menu";
+
+.#{$component-name} {
+  width: 50rem;
+  justify-self: end;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3.2rem;
+  justify-items: center;
+
+  &__link {
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 4px;
+    transition: all 0.5s;
+
+    &:hover {
+      color: var(--color-yellow-2);
+    }
+  }
+}
